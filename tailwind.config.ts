@@ -4,6 +4,8 @@ const {
   default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette')
 
+// import { flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette'
+
 module.exports = {
   darkMode: ['class'],
   content: [
@@ -75,9 +77,9 @@ module.exports = {
             backgroundPosition: '350% 50%, 350% 50%',
           },
         },
-        animation: {
-          aurora: 'aurora 60s linear infinite',
-        },
+      },
+      animation: {
+        aurora: 'aurora 60s linear infinite',
       },
     },
   },

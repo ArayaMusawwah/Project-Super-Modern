@@ -1,35 +1,25 @@
 'use client'
 
 import { AuroraBackground } from '@/components/ui/aurora-background'
-import { SparklesCore } from '@/components/ui/sparkles'
+import { ShootingStars } from '@/components/ui/shooting-star'
+import Image from 'next/image'
+import ShootingStarsAndStarsBackground from './shootingStarsBackground'
+import { StarsBackground } from '@/components/ui/stars-background'
+import FlipWordsComponent from './flipWordsComponent'
 
 export default function Hero() {
   return (
     <AuroraBackground>
-      <div className="flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black">
-        <h1 className="font-geissant relative z-20 text-center text-3xl text-white md:text-7xl lg:text-9xl">
-          Brata Muhammad
-        </h1>
-        <div className="relative h-40 w-[40rem]">
-          {/* Gradients */}
-          <div className="absolute inset-x-20 top-0 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
-          <div className="absolute inset-x-20 top-0 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-          <div className="absolute inset-x-60 top-0 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
-          <div className="absolute inset-x-60 top-0 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
-
-          {/* Core component */}
-          <SparklesCore
-            background="transparent"
-            minSize={0.4}
-            maxSize={1}
-            particleDensity={1200}
-            className="h-full w-full"
-            particleColor="#FFFFFF"
-          />
-
-          {/* Radial Gradient to prevent sharp edges */}
-          <div className="absolute inset-0 h-full w-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-        </div>
+      <div className="grid h-[40rem] w-full grid-cols-2 flex-col items-center justify-center gap-10 rounded-md">
+        <FlipWordsComponent />
+        <Image
+          src="/hero.png"
+          alt="Hero"
+          width={50}
+          height={50}
+          layout="responsive"
+          className="h-full w-full max-w-xl"
+        />
       </div>
     </AuroraBackground>
   )
