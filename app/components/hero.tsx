@@ -1,10 +1,7 @@
 'use client'
 
 import { AuroraBackground } from '@/components/ui/aurora-background'
-import { ShootingStars } from '@/components/ui/shooting-star'
 import Image from 'next/image'
-import ShootingStarsAndStarsBackground from './shootingStarsBackground'
-import { StarsBackground } from '@/components/ui/stars-background'
 import FlipWordsComponent from './flipWordsComponent'
 
 export default function Hero() {
