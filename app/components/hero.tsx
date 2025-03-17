@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="grid h-[40rem] w-full grid-cols-2 flex-col items-center justify-center gap-10 rounded-md">
         <FlipWordsComponent />
         <Image
-          src="/hero.png"
+          src="/HERO.png"
           alt="Hero"
           width={50}
           height={50}
