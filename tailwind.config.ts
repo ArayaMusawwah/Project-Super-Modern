@@ -66,6 +66,7 @@ module.exports = {
       fontFamily: {
         geissant: ['var(--font-geist-sans)'],
         geistmono: ['var(--font-geist-mono)'],
+        abril: ['var(--font-abril)'],
         inter: ['Inter'],
       },
       keyframes: {
